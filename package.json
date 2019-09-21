@@ -1,0 +1,19 @@
+{
+  "name": "vidit-server",
+  "version": "1.0.0",
+  "description": "Vidit Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/longshotdev/vidit-server.git"
+  },
+  "author": "AndyIsCool5463",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/longshotdev/vidit-server/issues"
+  },
+  "homepage": "https://github.com/longshotdev/vidit-server#readme"
+}
