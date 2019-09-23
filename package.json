@@ -4,7 +4,9 @@
   "description": "Vidit Server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "start": "nodemon server.js",
+    "debug": "nodemon --inspect ."
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,19 @@
   "bugs": {
     "url": "https://github.com/longshotdev/vidit-server/issues"
   },
-  "homepage": "https://github.com/longshotdev/vidit-server#readme"
+  "homepage": "https://github.com/longshotdev/vidit-server#readme",
+  "dependencies": {
+    "apollo-server": "^2.9.3",
+    "better-sqlite-pool": "^0.2.2",
+    "enmap": "^5.1.2",
+    "express-fileupload": "^1.1.6-alpha.5",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.7",
+    "graphql-import": "^0.7.1",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "simple-youtube-api": "^5.2.1",
+    "ytdl-core": "^0.29.7"
+  }
 }
