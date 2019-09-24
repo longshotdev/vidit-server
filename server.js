@@ -28,13 +28,7 @@ ADDING ALL LOCAL VIDEOS
 
 */
 
-String.prototype.trunc =
-  String.prototype.trunc ||
-  function(n) {
-    return this.length > n ? this.substr(0, n - 1) + "&hellip;" : this;
-  };
-
-console.log("READYING SHIT");
+console.log("READY");
 vidDB.defer.then(() => {
   vidDB.set("video", [
     {
@@ -62,30 +56,20 @@ vidDB.defer.then(() => {
       id: 2
     }
   ]);
-  fs.readdir("D:/Videos/Counter-strike  Global Offensive", (err, files) => {
-    files.forEach(f => {
+  try {
+  fs.readdir("./videos", (err, files) => {
+    if (err) return console.error(err);
+    files.forEach(file => {
+      console.log("SET IN Db");
       vidDB.push("video", {
-        title: f,
-        URL: `D:/Videos/Counter-strike  Global Offensive/${f}`,
+        title: file,
+        URL: `./videos/${file}`,
         artist: "Unknown",
         id: 283
       });
     });
   });
-  // fs.readdir("./videos", (err, files) => {
-  //   if (err) return console.err(err);
-  //   files.forEach(file => {
-  //     console.log("SET IN Db");
-  //     vidDB.push("video", {
-  //       title: file,
-  //       URL: `./videos/${file}`,
-  //       artist: "Unknown",
-  //       id: 283
-  //     });
-  //   });
-  // });
-});
-
+} catch(e) {console.log(e);}});
 /* 
 
 END 
@@ -114,29 +98,7 @@ app.get("/videos/play/:id", async (req, res) => {
   }
 });
 app.get("/update", async (req, res) => {
-  await fs.readdir("./videos", (err, files) => {
-    if (err) return console.err(err);
-    console.log(files);
-    // files.forEach(c => {
-    //   vidDB.push("video", {
-    //     title: c,
-    //     URL: `./videos/${c}`,
-    //     artist: "Unknown",
-    //     id: 283
-    //   });
-    // });
-    fs.readdir("D:/Videos/Counter-strike  Global Offensive", (err, files) => {
-      files.forEach(f => {
-        vidDB.push("video", {
-          title: f,
-          URL: `D:/Videos/Counter-strike  Global Offensive/${f}`,
-          artist: "Unknown",
-          id: 283
-        });
-      });
-    });
-  });
-
+update();
   res.json(videos);
 });
 app.get("/clear", async (req, res) => {
@@ -155,7 +117,7 @@ app.get("/clear", async (req, res) => {
     },
     {
       title: "Flick of the Wrist",
-      URL: "./videos/niggas.mp4",
+      URL: "./videos/bruh.mp4",
       artist: "Lil Mosey",
       id: 2
     },
@@ -275,3 +237,33 @@ function runLocalVideo(req, res, video, videos) {
     fs.createReadStream(path).pipe(res);
   }
 }
+async function update() {
+
+  try {
+    fs.readdir("D:/Videos/Counter-strike  Global Offensive", (err, files) => {
+      files.forEach(f => {
+        vidDB.push("video", {
+          title: f,
+          URL: `D:/Videos/Counter-strike  Global Offensive/${f}`,
+          artist: "Unknown",
+          id: 283
+        });
+      });
+    });
+    // search video folder 
+  await fs.readdir("./videos", (err, files) => {
+    if (err) return console.error(err);
+    console.log(files);
+    files.forEach(c => {
+      vidDB.push("video", {
+        title: c,
+        URL: `./videos/${c}`,
+        artist: "Unknown",
+        id: 283
+      });
+    });
+
+  })
+}catch(e) {
+  return console.error(e)
+} }
