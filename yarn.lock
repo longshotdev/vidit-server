@@ -428,15 +428,15 @@ backo2@^1.0.2:
   resolved "https://registry.yarnpkg.com/backo2/-/backo2-1.0.2.tgz#31ab1ac8b129363463e35b3ebb69f4dfcfba7947"
   integrity sha1-MasayLEpNjRj41s+u2n038+6eUc=
 
-better-sqlite-pool@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/better-sqlite-pool/-/better-sqlite-pool-0.2.2.tgz#af08ccd497130d187be820714f50f7efb9cac215"
-  integrity sha512-EZCfYtrc80kGSQ4AXLChEeSV5agMF8BSRqBaH4X852Nk0qoCA1GFv5j9r5JjpUDlQR0GDa10rosivMX15CH+Dw==
+better-sqlite-pool@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/better-sqlite-pool/-/better-sqlite-pool-0.2.3.tgz#5ba0f6b0f1a63fd30a37b27b7bddcb8e1b7f25a0"
+  integrity sha512-aV0eLQ4RsMQaYsv+xAptyLZS++nLlGbmN1KCFJCRkEtgulDMQtMKwgJLz8zDAP8leqX8CyidaZOjayLOGPBixA==
   dependencies:
-    better-sqlite3 "^5.4.0"
-    lodash "^4.17.11"
+    better-sqlite3 "^5.4.3"
+    lodash "^4.17.15"
 
-better-sqlite3@^5.4.0:
+better-sqlite3@^5.4.3:
   version "5.4.3"
   resolved "https://registry.yarnpkg.com/better-sqlite3/-/better-sqlite3-5.4.3.tgz#2cb843ce14c56de9e9c0ca6b89844b7d4b5794b8"
   integrity sha512-fPp+8f363qQIhuhLyjI4bu657J/FfMtgiiHKfaTsj3RWDkHlWC1yT7c6kHZDnBxzQVoAINuzg553qKmZ4F1rEw==
@@ -911,7 +911,7 @@ lodash.sortby@^4.7.0:
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
 
-lodash@^4.17.11, lodash@^4.17.15, lodash@^4.17.4:
+lodash@^4.17.15, lodash@^4.17.4:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
