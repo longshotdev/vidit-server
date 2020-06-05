@@ -594,10 +594,10 @@ encodeurl@~1.0.2:
   resolved "https://registry.yarnpkg.com/encodeurl/-/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
   integrity sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k=
 
-enmap@^5.1.2:
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/enmap/-/enmap-5.1.2.tgz#a25bd84297f0941ed33e6fc1a7f458ed53fba248"
-  integrity sha512-64l4FqcXJbwMRdBD399cRX/KVpVrayDwAm23Bi2aI7h2VYNMFtf587h8gB2DCLBjWPP3sJFDCuRcnTJepaOnxA==
+enmap@^5.2.9:
+  version "5.2.9"
+  resolved "https://registry.yarnpkg.com/enmap/-/enmap-5.2.9.tgz#7c8eebef1ee35f212e2a5643277b2312f60765c4"
+  integrity sha512-PoZU4WQT9+JH4Lq2ImfR8NiGZvWqCJAI58PSyMbT4Whg3khC+vFAXsP4rJfeduOYEFUf19itCtvK5AqcxNAdZQ==
   dependencies:
     lodash "^4.17.15"
 
