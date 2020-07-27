@@ -30,6 +30,6 @@
   },
   "devDependencies": {
     "simple-youtube-api": "^5.2.1",
-    "ytdl-core": "^0.29.7"
+    "ytdl-core": "^3.1.3"
   }
 }
