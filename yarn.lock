@@ -465,7 +465,7 @@ buffer-from@^1.0.0:
   resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.1.tgz#32713bc028f75c02fdb710d7c7bcec1f2c6070ef"
   integrity sha512-MQcXEUbCKtEo7bhqEs6560Hyd4XaovZlO/k9V3hjVUF/zwW7KBVdSK4gIt/bzwS9MbR5qob+F5jusZsb0YQK2A==
 
-busboy@^0.2.11, busboy@^0.2.14:
+busboy@^0.2.11:
   version "0.2.14"
   resolved "https://registry.yarnpkg.com/busboy/-/busboy-0.2.14.tgz#6c2a622efcf47c57bbbe1e2a9c37ad36c7925453"
   integrity sha1-bCpiLvz0fFe7vh4qnDetNseSVFM=
@@ -641,12 +641,12 @@ eventemitter3@^3.1.0:
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.1.2.tgz#2d3d48f9c346698fce83a85d7d664e98535df6e7"
   integrity sha512-tvtQIeLVHjDkJYnzf2dgVMxfuSGJeM/7UCG17TT4EumTfNtF+0nebF/4zWOIkCreAbtNqhGEboB6BWrwqNaw4Q==
 
-express-fileupload@^1.1.6-alpha.5:
-  version "1.1.6-alpha.5"
-  resolved "https://registry.yarnpkg.com/express-fileupload/-/express-fileupload-1.1.6-alpha.5.tgz#5f3ca1a58d15e1b85b2f273e4fe099ca5da96c9f"
-  integrity sha512-M/PLB3moD1stnfYUHGtAVqfdjOz0VSY00NWnA9CpSEyPxhs/lEeperWOffaBzom+DO8Sq1z1okJOy2N4MDRYtA==
+express-fileupload@^1.1.8:
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/express-fileupload/-/express-fileupload-1.1.8.tgz#188ada201db8ba41b5cce1bd7d0445c2ef7c0637"
+  integrity sha512-5FY1of8hxuI6HfmceDKc2Y6vg3EuXAlLz0Jw/BUglzrm7nKRuvjN6Y8ZgBfRp+1t5YkGAX7TEb5a5AmG5RqDcA==
   dependencies:
-    busboy "^0.2.14"
+    busboy "^0.3.1"
 
 express-graphql@^0.9.0:
   version "0.9.0"
