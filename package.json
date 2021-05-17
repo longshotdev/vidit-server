@@ -20,7 +20,7 @@
   "homepage": "https://github.com/longshotdev/vidit-server#readme",
   "dependencies": {
     "apollo-server": "^2.9.4",
-    "better-sqlite-pool": "^0.2.2",
+    "better-sqlite-pool": "^0.3.1",
     "enmap": "^5.1.2",
     "express-fileupload": "^1.1.6-alpha.5",
     "express-graphql": "^0.9.0",
